@@ -62,7 +62,7 @@ describe("Categories_Main Component", () => {
 });
 
 describe("results Component", () => {
-  it(`navigates to quiz page`, () => {
+  it(`navigates to results page on clicking "Finish Test" button`, () => {
     cy.visit("http://localhost:3000/quiz");
 
     it(`navigates to results page on clicking "Finish Test" button`, () => {
