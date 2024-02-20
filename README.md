@@ -1,72 +1,73 @@
-# Getting Started with Create React App
+# LRNR APP (front-end)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app is intended to be run alongside the LRNR APP back-end, which you can find here: https://github.com/reggiecheston/LRNR-backend1
 
-## Available Scripts
+This project uses React.js and NPM libraries.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+- Clone repository:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> git clone https://github.com/reggiecheston/LRNR-FrontEnd.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Open the directory in your prefered code editor
 
-### `npm test`
+#### In the root directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Install Dependencies:
 
-### `npm run build`
+> npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Run application:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## User Guide
 
-### `npm run eject`
+You can access the application in your browser via http://localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Navigation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+From the static **homepage**, you can use the navbar, hamburger menu, or footer links to navigate to the **quiz generation** page (http://localhost:3000/categories) or the static **account** page (http://localhost:3000/account).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Quiz Generation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Using the dropdowns you can select between different topics, levels of expertise, number of questions, and style of questions to query the OpenAI API to generate a personalized coding-related quiz.
 
-## Learn More
+With each question, you will submit an answer, which will also query the API to evaluate and grade the answer on correctness from 0% - 100%. Once an answer is evaluated, you can navigate to the next question using the _next question_ button.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Once you reach the last question's evaluation and click the _finish test_ button, you'll be redirected to the static results page.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To begin again, you can navigate to the quiz generation page using the _try another quiz_ button or via the navbar or footer links
 
-### Code Splitting
+## Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Front-end (cypress)
 
-### Analyzing the Bundle Size
+- navigate into the front end directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> cd LRNR-FrontEnd
 
-### Making a Progressive Web App
+- install cypress
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> npm install cypress --save-dev
 
-### Advanced Configuration
+- run the tests:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> npx cypress open
 
-### Deployment
+#### in cypress
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- select the following options in order:
+- - E2E Testing
+- - Continue
+- - Start E2E Testing in Chrome
 
-### `npm run build` fails to minify
+- once the chrom window pops up:
+- - select Create New
+- - close out the next window
+- - select spec.cy.js to view the result of the cypress tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# LRNR
-# LRNR
+You can find the cypress tests themselves in **LRNR-FrontEnd/cypress/e2e/spec.cy.js**
+
+Enjoy!
