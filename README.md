@@ -13,7 +13,7 @@ This project uses React.js, Bootstrap, and NPM libraries.
 - Clone repository:
 
 ```bash
-    git clone https://github.com/bevans14/LRNR-FrontEnd.git
+    git clone https://github.com/reggiecheston/LRNR-FrontEnd
 ```
 
 - Open the directory in your preferred code editor
@@ -64,7 +64,9 @@ To begin again, you can navigate to the quiz generation page using the _try anot
 
 ### Front-end (cypress)
 
-- Navigate into the front end directory:
+#### Installing and running cypress:
+
+- Navigate into the root of the front-end directory:
 
 ```bash
     cd LRNR-FrontEnd
