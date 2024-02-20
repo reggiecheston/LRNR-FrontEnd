@@ -59,14 +59,15 @@ To begin again, you can navigate to the quiz generation page using the _try anot
 #### in cypress
 
 - select the following options in order:
-- - E2E Testing
-- - Continue
-- - Start E2E Testing in Chrome
+
+  - E2E Testing
+  - Continue
+  - Start E2E Testing in Chrome
 
 - once the chrom window pops up:
-- - select Create New
-- - close out the next window
-- - select spec.cy.js to view the result of the cypress tests
+  - select Create New
+  - close out the next window
+  - select spec.cy.js to view the result of the cypress tests
 
 You can find the cypress tests themselves in **LRNR-FrontEnd/cypress/e2e/spec.cy.js**
 
