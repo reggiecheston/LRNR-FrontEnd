@@ -10,11 +10,11 @@ This project uses React.js and NPM libraries.
 
 > git clone https://github.com/reggiecheston/LRNR-FrontEnd.git
 
-- Open the directory in your prefered code editor
+- Open the directory in your preferred code editor
 
 #### In the root directory:
 
-- Install Dependencies:
+- Install dependencies:
 
 > npm install
 
@@ -44,30 +44,30 @@ To begin again, you can navigate to the quiz generation page using the _try anot
 
 ### Front-end (cypress)
 
-- navigate into the front end directory:
+- Navigate into the front end directory:
 
 > cd LRNR-FrontEnd
 
-- install cypress
+- Install Cypress
 
 > npm install cypress --save-dev
 
-- run the tests:
+- Open Cypress:
 
 > npx cypress open
 
-#### in cypress
+#### in cypress:
 
-- select the following options in order:
+- Select the following options in order:
 
   - E2E Testing
   - Continue
   - Start E2E Testing in Chrome
 
-- once the chrom window pops up:
-  - select Create New
-  - close out the next window
-  - select spec.cy.js to view the result of the cypress tests
+- Once the chrom window pops up:
+  - Select Create New
+  - Close out the next window
+  - Select spec.cy.js to view the result of the cypress tests
 
 You can find the cypress tests themselves in **LRNR-FrontEnd/cypress/e2e/spec.cy.js**
 
