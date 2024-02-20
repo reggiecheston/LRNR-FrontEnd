@@ -56,7 +56,7 @@ const Quiz_Main = () => {
             <div className="col">
               <button
                 className="btn-large waves-effect waves-light teal"
-                onclick={submitAnswer}
+                onClick={submitAnswer}
               >
                 Submit Answer
               </button>
@@ -113,7 +113,7 @@ const Quiz_Main = () => {
             <div className="col">
               <button
                 className="btn-large waves-effect waves-light teal"
-                onclick="nextQuestion()"
+                onClick="nextQuestion()"
               >
                 Next
               </button>

@@ -4,36 +4,6 @@ describe("LRNR APP", () => {
   });
 });
 
-// describe("Categories_Main Component Success", () => {
-//   it(`navigates to categories page`, () => {
-//     cy.visit("http://localhost:3000/categories");
-
-//     it(`displays loading message while generating quiz`, () => {
-//       cy.get("#topic").select("golang", { force: true });
-//       cy.get("#expertise").select("novice", { force: true });
-//       cy.get("#numquestions").select("5", { force: true });
-//       cy.get("#questionstyle").select("normal", { force: true });
-//       cy.get("button").contains("Generate Quiz").click();
-
-//       cy.contains("Loading...").should("exist");
-//     });
-//   });
-// });
-
-// describe("Categories_Main Component Error", () => {
-//   it("allows user to select preferences and generate quiz", () => {
-//     cy.visit("http://localhost:3000/categories");
-
-//     cy.get("#topic").select("golang", { force: true });
-//     cy.get("#expertise").select("novice", { force: true });
-//     cy.get("#numquestions").select("5", { force: true });
-//     cy.get("#questionstyle").select("normal", { force: true });
-//     cy.get("button").contains("Generate Quiz").click();
-
-//     cy.url().should("include", "/quiz");
-//   });
-// });
-
 // Same as above, but bundled into one test
 describe("Categories_Main Component", () => {
   beforeEach(() => {
