@@ -1,16 +1,10 @@
 # LRNR APP (front-end)
 
-#### Authors
-
-##### [Erick Rodea](https://github.com/erickrodea)
-
-##### [Brooke Evans](https://github.com/bevans14)
+#### Author
 
 ##### [Reggie Cheston](https://github.com/reggiecheston)
 
-##### [Kennidy Stillwell](https://github.com/kennidystillwell)
-
-This app is intended to be run alongside the [LRNR APP back-end](https://github.com/bevans14/LRNR-backend1).
+This app is intended to be run alongside the [LRNR APP back-end](https://github.com/reggiecheston/LRNR-backend1).
 
 This project uses React.js, Bootstrap, and NPM libraries.
 
